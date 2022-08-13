@@ -1,27 +1,33 @@
+<!DOCTYPE html>
+
 <html>
     <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <title>Unit Converter</title>
         <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         
         <div class="header">
             <h2>Metric/Imperial Unit Conversion</h2>
-            <input type="text>
-            <button>Convert</button>
+            <input type="text" id="convert-el" placeholder="0">
+            <button id="convert-btn">Convert</button>
         </div>
             
-        <div>
-            <div>
+        <div class="container">
+            <div id="length" class="unit">
                 <h3>Length (Meter/Feet)</h3>
-                <p></p>
+                <p id="length-el"></p>
             </div>
-            <div>
+            <div id="volume" class="unit">
                 <h3>Volume (Liters/Gallons)</h3>
-                <p></p>
+                <p id="volume-el"></p>
             </div>
-            <div>
+            <div id="mass" class="unit">
                 <h3>Mass (Kilograms/Pounds)</h3>
-                <p></p>
+                <p id="mass-el"></p>
             </div>
         </div>
         
