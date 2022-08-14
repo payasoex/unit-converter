@@ -3,6 +3,7 @@ const convertBtn = document.getElementById('convert-btn');
 const lengthEl = document.getElementById('length-el');
 const volumeEl = document.getElementById('volume-el');
 const massEl = document.getElementById('mass-el');
+const darkModeContainer = document.getElementsByClassName('dark-mode');
 
 const zeroValue = 0
 
@@ -21,3 +22,8 @@ convertBtn.addEventListener('click', () => {
     volumeEl.textContent = `${baseValue} liters = ${(baseValue * literToGallon).toFixed(3)} gallons | ${baseValue} gallons = ${(baseValue / literToGallon).toFixed(3)} liters`;
     massEl.textContent = `${baseValue} kilogramss = ${(baseValue * kilogramToPound).toFixed(3)} pounds | ${baseValue} pounds = ${(baseValue / kilogramToPound).toFixed(3)} kilograms`;
 } );
+
+function toDarkMode () {
+    darkModeContainer.style.backgroundColor = '#1F2937';
+    
+}

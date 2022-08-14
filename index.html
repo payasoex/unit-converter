@@ -9,28 +9,35 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     </head>
     <body>
-        
-        <div class="header">
-            <h2>Metric/Imperial Unit Conversion</h2>
-            <input type="text" id="convert-el" placeholder="0">
-            <button id="convert-btn">Convert</button>
-        </div>
+        <div class="converter">
+
+            <div class="header">
+                <h2>Metric/Imperial Unit Conversion</h2>
+                <input type="text" id="convert-el" placeholder="0">
+                <button id="convert-btn">Convert</button>
+            </div>
+                
+            <div class="container dark-mode">
+
+                <div id="length" class="unit">
+                    <h3>Length (Meter/Feet)</h3>
+                    <p id="length-el"></p>
+                </div>
+
+                <div id="volume" class="unit">
+                    <h3>Volume (Liters/Gallons)</h3>
+                    <p id="volume-el"></p>
+                </div>
+
+                <div id="mass" class="unit">
+                    <h3>Mass (Kilograms/Pounds)</h3>
+                    <p id="mass-el"></p>
+                </div>
+
+            </div>
             
-        <div class="container">
-            <div id="length" class="unit">
-                <h3>Length (Meter/Feet)</h3>
-                <p id="length-el"></p>
-            </div>
-            <div id="volume" class="unit">
-                <h3>Volume (Liters/Gallons)</h3>
-                <p id="volume-el"></p>
-            </div>
-            <div id="mass" class="unit">
-                <h3>Mass (Kilograms/Pounds)</h3>
-                <p id="mass-el"></p>
-            </div>
         </div>
-        
+                
         <script src="index.js"></script>
     </body>
 </html>
