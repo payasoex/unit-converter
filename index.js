@@ -23,7 +23,9 @@ convertBtn.addEventListener('click', () => {
     massEl.textContent = `${baseValue} kilogramss = ${(baseValue * kilogramToPound).toFixed(3)} pounds | ${baseValue} pounds = ${(baseValue / kilogramToPound).toFixed(3)} kilograms`;
 } );
 
-function toDarkMode () {
-    darkModeContainer.style.backgroundColor = '#1F2937';
-    
-}
+// ## For future implementation
+
+// function toDarkMode () {
+//     darkModeContainer.style.backgroundColor = '#1F2937';
+
+// }
