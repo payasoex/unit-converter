@@ -54,6 +54,7 @@ button {
     width: 500px;
     height: 109px;
     background: #ffffff;
+    border-radius: 5px;
 }
 
 #length {
